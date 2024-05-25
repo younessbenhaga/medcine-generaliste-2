@@ -1,0 +1,105 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+.home_image {
+  width: 536px;
+  max-height: 630px;
+  object-fit: cover;
+  object-position: 50% 100%;
+  box-shadow: -28px 28px 70px -20px rgba(0, 0, 0, .4);
+  overflow: hidden;
+}
+
+@media (max-width:600px) {
+  .home_image {
+    width: 80%;
+  }
+}
+
+.circle-txt {
+  background-image: url("./assets/circle.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.green-waves {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.image-container img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  /* transition: all 0.8s ease-in-out; */
+}
+
+
+/* Services */
+.service-li {
+  transition: opacity;
+  transition-duration: 1s;
+}
+
+.service-li-div {
+  transition: opacity;
+  transition-duration: 0.6s;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+}
+
+.service-li:hover .service-li-div {
+  background: linear-gradient(180deg, rgba(21, 24, 23, 0.24) 0%, #151618 100%);
+  opacity: 1;
+}
+
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+/* render - vOUS */
+table.greenTable {
+  width: 100%;
+  height: 100%;
+  min-height: 372px;
+  text-align: center;
+}
+
+table.greenTable td,
+table.greenTable th {
+  border: 1px solid #80808077;
+  padding: 8px 2px;
+}
+
+table.greenTable tbody td {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+table.greenTable thead th {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+
+}
